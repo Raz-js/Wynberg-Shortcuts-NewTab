@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+  	"name": "WBHS New Tab Helper",
+    "description": "New Tab with a nicer layout and shortcuts to daily-used websites",
+    "version": "0.0.0.1",
+	"icons": { "16": "logo.png",
+           "48": "logo.png",
+          "128": "logo.png" },
+    "permissions" : [
+    		"bookmarks",
+        "storage",
+        "sessions",
+        "tabs",
+        "chrome://favicon/"],
+    "chrome_url_overrides" : {
+        "newtab": "newpage.html"
+    },
+    	"background": {
+		"scripts":["background.js"],
+		"persistent": false
+	}
+ }
